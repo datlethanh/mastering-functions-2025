@@ -7,4 +7,13 @@ from nlplogic.corenlp import (
 
 
 def test_get_phrases():
-    assert "golden state" in get_phrases("Golden State Warriors")
+    assert "Wynxx" in get_phrases("Wynxx")
+
+def test_search_wikipedia():
+    assert "Wynxx" in search_wikipedia("Wynxx")
+
+def test_summarize_wikipedia():
+    assert "Wynxx" in summarize_wikipedia("Wynxx")
+
+def test_get_text_blob():
+    assert "Wynxx" in get_text_blob("Wynxx")
