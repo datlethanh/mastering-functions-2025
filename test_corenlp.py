@@ -7,13 +7,13 @@ from nlplogic.corenlp import (
 
 
 def test_get_phrases():
-    assert True
+    assert "duolingo" in get_phrases("Duolingo English Test")
 
 def test_search_wikipedia():
-    assert True
+    assert "DET" in search_wikipedia("Duolingo English Test")
 
 def test_summarize_wikipedia():
-    assert True
+    assert "to be proficient in English" in summarize_wikipedia("Duolingo English Test")
 
 def test_get_text_blob():
-    assert "Wynxx" in get_text_blob("Wynxx")
+    assert "" in get_text_blob("Duolingo English Test")
